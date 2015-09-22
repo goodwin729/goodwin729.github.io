@@ -14,7 +14,7 @@
         &__image {
             height: 100vh;
             margin-left: -500px;
-            width: 100%;
+            width: auto;
             .monochrome-static;
         }
     }
@@ -58,6 +58,18 @@
         &-cards {
             .row {
                 margin: 0;
+            }
+        }
+        &-caption {
+            bottom: 300px;
+        }
+        .carousel-indicators {
+            bottom: -@site-column;
+            li {
+                border-color: @white;
+                &.active {
+                    background-color: @white;
+                }
             }
         }
     }
