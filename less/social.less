@@ -1,0 +1,57 @@
+.social {
+    float: right;
+    padding: 0;
+    position: relative;
+    .transition-0_5s;
+    &__list {
+        float: right;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        background-color: @brand-color;
+        border-bottom: @brand-color-dark-1 2px solid;
+        color: @white;
+        display: table;
+        font-size: 40px;
+        line-height: 40px;
+        height: @site-column;
+        padding: @site-padding / 3;
+        text-align: center;
+        width: @site-column;
+        .monochrome;
+        * {
+            color: @white;
+        }
+        &-fb {
+            background-color: @color-fb;
+            border-bottom-color: darken(@color-fb, 10%);
+        }
+        &-vk {
+            background-color: @color-vk;
+            border-bottom-color: darken(@color-vk, 10%);
+        }
+        &-in {
+            background-color: @color-in;
+            border-bottom-color: darken(@color-in, 10%);
+        }
+        &-tw {
+            background-color: @color-tw;
+            border-bottom-color: darken(@color-tw, 10%);
+        }
+        &-pin {
+            background-color: @color-pin;
+            border-bottom-color: darken(@color-pin, 10%);
+        }
+        &-Gp {
+            background-color: @color-Gp;
+            border-bottom-color: darken(@color-Gp, 10%);
+        }
+    }
+    &__element {
+        color: @white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

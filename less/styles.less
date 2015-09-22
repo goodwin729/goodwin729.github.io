@@ -1,0 +1,113 @@
+@import "bootstrap/bootstrap.less";
+
+
+a{
+    color: @gray-dark;
+    &:hover{
+        color: @brand-color-dark-1;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+    &:not(:hover) {
+        transition: 0.25s;
+    }
+}
+p {
+    margin: @site-padding / 2 0;
+}
+.form-control {
+    box-shadow: none;
+}
+
+.left{ float: left;}
+.right{ float: right;}
+label{
+    font-weight: normal;
+}
+textarea:focus,
+input:focus{
+    box-shadow: none;
+}
+*:focus,
+*:visited,
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+/*---------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: @black;
+    margin: 0;
+}
+h1{
+    color: @white;
+    font-family: @brand-font;
+    font-size: 75px;
+    font-style: italic;
+    line-height: 75px;
+    padding: @site-padding;
+}
+h2{
+    color: @white;
+    font-family: @brand-font;
+    font-size: 45px;
+    font-style: italic;
+    line-height: 60px;
+    padding: @site-padding;
+}
+h3{
+    color: @black;
+    font-family: @brand-font;
+    font-size: 24px;
+    line-height: 24px;
+}
+h4{
+    font-family: @brand-font;
+    font-size: 16px;
+}
+h5{
+    font-size: 16px;
+}
+.brand-font{ font-family: @brand-font;}
+
+mark{
+    background: none;
+    color: @brand-color;
+    padding: 0 @site-padding / 2;
+}
+.center-el{ text-align: center;}
+
+
+
+@import "variables.less";
+
+@import "agents.less";
+@import "back.less";
+@import "banner-news.less";
+@import "btn.less";
+@import "carousel.less";
+@import "carousel-cards.less";
+@import "comments.less";
+@import "footer.less";
+@import "header.less";
+@import "navigation.less";
+@import "slider.less";
+@import "social.less";
+@import "sticker.less";
+@import "title.less";
+@import "top.less";
+@import "visitCard.less";
+
+@import "media/media-maxWidth-1200.less";
+@import "media/media-768-959.less";
+@import "media/media-320-767.less";
+//@import "media-601-767.less";
+//@import "media-maxWidth-600.less";
+//@import "media-ipad-portrait768.less";
+//@import "media-ipad-landscape1024.less";

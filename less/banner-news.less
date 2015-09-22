@@ -1,0 +1,145 @@
+.banner-news {
+    background-color: @white;
+    height: (@site-column + @site-padding * 4) * 3 - 3px;
+    margin: @site-padding * 2 0;
+    overflow: hidden;
+    position: relative;
+    &__list {
+    }
+    &__item {
+    }
+    &__info {
+        left: 0;
+        position: absolute;
+        top: 0;
+        &_list {
+            float: left;
+            list-style: none;
+            margin: 0 @site-padding * 2 0 0;
+            padding: 0;
+            position: relative;
+            width: @site-column + @site-padding * 4;
+            z-index: 5;
+        }
+        &_item {
+            background-color: @brand-color;
+            border-bottom: @brand-color-dark-1 2px solid;
+            color: @white;
+            display: block;
+            height: @site-column + @site-padding * 4;
+            padding: @site-padding;
+            text-align: center;
+            width: @site-column + @site-padding * 4;
+            &.active {
+                .banner-news__info_tab{
+                    background: none;
+                    border: none;
+                }
+            }
+        }
+        &_content {
+            color: @white;
+            height: (@site-column + @site-padding * 4) * 3 - 3px;
+            font-style: italic;
+            margin-top: -1px;
+            padding: @site-padding;
+            width: @site-padding * 30;
+            &:before {
+                content: "";
+                background-color: @black;
+                height: 100%;
+                left: 0;
+                opacity: 0.8;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+            > * {
+                color: @white;
+                position: relative;
+                z-index: 4;
+            }
+            &_title {
+                font-size: 18px;
+                margin-bottom: @site-padding / 3;
+                padding: 0 @site-padding;
+            }
+            &_text {
+                color: @brand-color-dark-1;
+                font-size: 14px;
+                height: @site-column * 5 - @site-padding * 2;
+                line-height: 18px;
+                padding: 0 @site-padding;
+            }
+        }
+        &_tab {
+            background: none;
+            border: none;
+            color: @white;
+            cursor: pointer;
+            font-size: @site-column;
+            line-height: @site-column + @site-padding;
+            margin: 0;
+            padding: none;
+            position: relative;
+            text-indent: 10;
+            .transition-0_3s;
+            &:hover {
+                background: none;
+                border: none;
+                color: @brand-color-dark-1;
+            }
+        }
+        &_sub {
+            bottom: -@site-padding * 2;
+            font-size: 12px;
+            line-height: 16px;
+            padding: @site-padding;
+            position: absolute;
+            right: -@site-padding * 2;
+            text-align: right;
+            width: @site-padding * 4 + @site-column;
+        }
+        &_icon {
+            font-size: @site-column;
+            margin: @site-padding;
+        }
+    }
+    &__image {
+        .monochrome;
+    }
+    &__nav {
+        bottom: 0;
+        position: absolute;
+        right: -1px;
+        .btn {
+            position: relative;
+            text-align: center;
+            width: @site-padding * 2;
+            &:first-child {
+                .fa {
+                    margin-left: -2px;
+                    position: relative;
+                }
+            }
+            &:before {
+                content: "";
+                border: @white 1px solid;
+                border-radius: 50%;
+                display: block;
+                height: @site-padding + @site-padding / 3;
+                left: 50%;
+                margin-left: -(@site-padding + @site-padding / 3) / 2;
+                margin-top: -(@site-padding + @site-padding / 3) / 2;
+                position: absolute;
+                top: 50%;
+                width: @site-padding + @site-padding / 3;
+                .transition-0_5s;
+            }
+            &:hover:before {
+                border-color: @brand-color-dark-1;
+            }
+        }
+    }
+}

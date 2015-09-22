@@ -1,0 +1,42 @@
+.btn {
+    background-color: @brand-color;
+    border-bottom: @brand-color-dark-1 1px solid;
+    color: @white;
+    display: inline-block;
+    font-style: italic;
+    overflow: hidden;
+    .transition-0_5s;
+    &:hover {
+        color: @brand-color-dark-1;
+        text-decoration: none;
+    }
+    &-big {
+        font-size: 30px;
+        line-height: 30px;
+        margin: @site-padding;
+        padding: @site-padding;
+    }
+    &-transparent {
+        background-color: transparent;
+        border: @brand-color 2px solid;
+    }
+    &-link {
+        background-color: transparent;
+        border: none;
+        color: @brand-color;
+        position: relative;
+        &:hover {
+            color: @brand-color-dark-1;
+        }
+    }
+    &-icon {
+        font-size: 20px;
+        line-height: 20px;
+        height: @site-padding * 2;
+        padding: @site-padding / 3;
+        width: @site-padding * 2;
+    }
+    &-text {
+        font-size: 24px;
+    }
+}

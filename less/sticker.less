@@ -1,0 +1,63 @@
+.sticker {
+    margin: @site-padding * 2 0;
+    overflow: hidden;
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+    &__item {
+        background-color: @white;
+        border-bottom: @gray 1px solid;
+        color: @gray-1;
+        font-style: italic;
+        padding: 0;
+    }
+    &__icon {
+        background-color: @brand-color;
+        border-bottom: @brand-color-dark-1 solid 2px;
+        color: @white;
+        display: block;
+        float: right;
+        height: @site-column + @site-padding * 4;
+        padding: @site-padding;
+        position: relative;
+        text-align: center;
+        width: @site-column + @site-padding * 4;
+        > *{
+           font-size: @site-column;
+            margin: @site-padding;
+        }
+        &:before {
+            content: "";
+            background-color: @white;
+            display: block;
+            height: @site-padding;
+            left: -@site-padding / 2;
+            margin-top: -@site-padding / 2;
+            position: absolute;
+            top: 50%;
+            width: @site-padding;
+            .rotate-45;
+        }
+    }
+    &__content {
+        overflow: hidden;
+        padding: @site-padding;
+        text-align: right;
+    }
+    &__title {
+        color: @brand-color-dark-1;
+        display: block;
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: @site-padding;
+    }
+    &__text {
+        display: block;
+        font-size: 16px;
+        height: @site-padding * 4;
+        line-height: 19px;
+        overflow: hidden;
+        position: relative;
+    }
+}

@@ -1,0 +1,78 @@
+.visitCard {
+    background-color: @white;
+    border-bottom: @gray 1px solid;
+    font-style: italic;
+    margin-top: @site-column * 2 - @site-padding * 2;
+    padding: @site-padding;
+    text-align: center;
+    .transition-0_3s;
+    &:hover,
+    &.active{
+        background-color: @black;
+        .visitCard {
+            &__image {
+                &:before,
+                &:after{
+                    border-color: @white;
+                }
+            }
+            &__btn {
+                background-color: @brand-color-dark-1;
+                color: @white;
+            }
+            &__image img{
+                .monochrome-none;
+            }
+        }
+    }
+    &__image {
+        height: @site-column * 2 + @site-padding * 2;
+        margin: (-@site-column * 2 + @site-padding) auto @site-padding auto;
+        padding: @site-padding * 2;
+        position: relative;
+        width: @site-column * 2 + @site-padding * 2;
+        &:before {
+            content: "";
+            border-left: @brand-color 2px solid;
+            border-top: @brand-color 2px solid;
+            height: @site-column;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: @site-column;
+            .transition-0_5s;
+        }
+        &:after {
+            content: "";
+            border-bottom: @brand-color 2px solid;
+            border-right: @brand-color 2px solid;
+            bottom: 0;
+            height: @site-column;
+            position: absolute;
+            right: 0;
+            width: @site-column;
+            .transition-0_5s;
+        }
+        img {
+            width: 100%;
+            .monochrome;
+        }
+    }
+    &__title {
+        color: @brand-color;
+        font-size: 20px;
+        line-height: 30px;
+        margin: @site-padding;
+    }
+    &__text {
+        color: @gray-dark;
+        font-size: 14px;
+        line-height: 16px;
+        margin: @site-padding;
+    }
+    &__btn{
+        font-size: 20px;
+        margin: @site-padding;
+        min-width: @site-column * 2 + @site-padding * 2;
+    }
+}

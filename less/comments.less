@@ -1,0 +1,36 @@
+.comments {
+    font-size: 14px;
+    line-height: 18px;
+    font-style: italic;
+    padding: @site-padding;
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        color: @brand-color-dark-1;
+        margin-bottom: @site-padding;
+        text-align: left;
+        &:nth-child(even) {
+            color: @white;
+            text-align: right;
+            .comments__time {
+                color: @brand-color-dark-1;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: @site-padding / 3;
+    }
+    &__time {
+        color: @white;
+        font-size: 12px;
+    }
+    &__text {}
+}
+
+
+.banner-news__info_content .comments {
+    height: @site-column * 5 + @site-padding / 3;
+}

@@ -1,0 +1,90 @@
+.navigation {
+    &__list {
+        background-color: @black;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        overflow: auto;
+        padding: (@site-padding * 6 + @site-padding / 3) 0 0 0;
+        position: fixed;
+        opacity: 0.95;
+        width: 270px;
+        .transition-0_5s;
+    }
+    &__item {
+        display: table;
+        font-size: 16px;
+        height: @site-padding * 5 + @site-padding / 3;
+        line-height: 16px;
+        padding: @site-padding - @site-padding / 3;
+        position: relative;
+        text-align: right;
+        width: 100%;
+        &:after {
+            content: "";
+            border-bottom: 10px solid @gray;
+            border-left: 10px solid transparent;
+            bottom: 0;
+            height: 0;
+            position: absolute;
+            right: 0;
+            width: 0;
+            .transition-0_3s;
+        }
+        &:hover,
+        &:hover *,
+        &.active,
+        &.active *{
+            color: @brand-color-dark-1;
+            &:before {
+                background-color: @brand-color-dark-1;
+            }
+            &:after {
+                border-bottom: 10px solid @brand-color-dark-1;
+            }
+
+        }
+    }
+    &__element {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+    &__button {
+        border-bottom: @white 9px solid;
+        box-shadow: 0 1px 0 @gray;
+        display: block;
+        float: left;
+        height: 24px;
+        margin-top: 20px;
+        margin-left: @site-padding * 2;
+        margin-right: @site-padding * 2;
+        position: relative;
+        text-decoration: none;
+        width: @site-padding * 3;
+        z-index: 5;
+        &:before {
+            content: "";
+            background: @white;
+            border-bottom: @gray 1px solid;
+            display: block;
+            height: 10px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            .transition-0_3s;
+        }
+        &:after {
+            content: "";
+            background: @white;
+            border-bottom: @gray 1px solid;
+            display: block;
+            height: 10px;
+            left: 0;
+            position: absolute;
+            top: @site-padding * 2;
+            width: 100%;
+            .transition-0_3s;
+        }
+    }
+}

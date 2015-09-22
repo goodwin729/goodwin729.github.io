@@ -1,0 +1,52 @@
+.back {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    &__container {
+        display: table;
+        height: 100vh;
+        left: 0;
+        position: relative;
+        width: 100%;
+        > div {
+            display: table-cell;
+            position: relative;
+            vertical-align: middle;
+            z-index: 20;
+        }
+    }
+    &__image {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .monochrome-static;
+    }
+    &:before {
+        content: "";
+        background-color: @gray-light;
+        height: 100%;
+        left: 0;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    &:after {
+        content: "";
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        .gradient;
+    }
+    .btn {
+        margin-left: 20%;
+    }
+    &__gradient-02 {
+        background: url("../img/bg_gradient-colors_02.jpg") no-repeat center top;
+    }
+}

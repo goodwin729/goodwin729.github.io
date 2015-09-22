@@ -1,0 +1,45 @@
+.carousel {
+    &-inner {
+        height: @site-column * 11;
+        overflow: visible;
+    }
+    &-indicators {
+        bottom: -@site-padding * 2;
+        margin-bottom: 0;
+        position: absolute;
+        li {
+            border: @brand-color 2px solid;
+            height: @site-padding;
+            margin: @site-padding / 2;
+            width: @site-padding;
+            &.active {
+                background-color: @brand-color;
+                height: @site-padding;
+                margin: @site-padding / 2;
+                width: @site-padding;
+            }
+        }
+    }
+    &-caption {
+        background-color: @white;
+        border-bottom: @brand-color-dark-1 2px solid;
+        color: @gray;
+        font-style: italic;
+        height: @site-column * 3;
+        left: auto;
+        padding: @site-padding;
+        position: absolute;
+        right: 0;
+        text-align: left;
+        text-shadow: none;
+        top: @site-padding * 3;
+    }
+    &-image {
+        left: -@site-column;
+        margin-top: @site-padding * 4;
+        position: relative;
+    }
+    .item {
+        .transition-0_5s;
+    }
+}

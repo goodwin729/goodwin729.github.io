@@ -1,0 +1,102 @@
+.agents {
+    margin: @site-padding * 2 0;
+    overflow: hidden;
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+    &__item {
+        padding: @site-padding;
+        position: relative;
+        &-link {
+            background-color: @white;
+            border-bottom: @gray 1px solid;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            .agents__image {
+                .monochrome;
+            }
+            &:hover {
+                .agents__hidden {
+                    opacity: 1;
+                }
+                .agents__image {
+                    .monochrome-none;
+                }
+                .btn-icon {
+                    opacity: 0;
+                }
+                .btn-text{
+                    opacity: 1;
+                    right: 0;
+                }
+            }
+        }
+    }
+    &__btn {
+        margin: @site-padding;
+        min-width: @site-column * 2 + @site-padding * 2;
+        &-zoom {
+            bottom: 0;
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__image {
+        display: block;
+        //height: @site-column * 6;
+        width: 100%;
+        .monochrome;
+    }
+    &__hidden {
+        display: table;
+        font-size: 16px;
+        left: 0;
+        margin: @site-padding;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: calc(~"100% - " @site-padding * 2);
+        .transition-0_5s;
+        &:after {
+            content: "";
+            background-color: @black;
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 4;
+        }
+        &-text {
+            color: @white;
+            display: table-cell;
+            height: @site-column * 6 - @site-padding * 2;
+            padding: @site-padding;
+            position: relative;
+            vertical-align: middle;
+            width: 100%;
+            z-index: 5;
+            &_title {
+                color: @brand-color;
+                display: block;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: @site-padding / 3;
+                width: 100%;
+            }
+            &_subtitle {
+                color: @white;
+                display: block;
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+        }
+    }
+}
