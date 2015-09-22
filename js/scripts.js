@@ -50,6 +50,13 @@ $(window).load(function(){
         $(".getScroll").mCustomScrollbar({
             theme:"minimal"
         });
+        $(window).resize(function() {
+            if(window.innerWidth > 768) {
+                initCustomScrollbar();
+            } else {
+                $('.getScroll').mCustomScrollbar("destroy");
+            }
+        });
     });
 
 })(jQuery);
