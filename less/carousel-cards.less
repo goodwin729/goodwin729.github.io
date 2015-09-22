@@ -4,13 +4,31 @@
         list-style: none;
         padding: 0;
     }
+    .owl-prev {
+        border-left: @white 2px solid;
+        border-top: @white 2px solid;
+        height: @site-padding * 3;
+        left: -@site-column - @site-padding;
+        margin-top: 20px;
+        position: absolute;
+        top: 50%;
+        width: @site-padding * 3;
+        .rotate-135;
+    }
+    .owl-next {
+        border-right: @white 2px solid;
+        border-top: @white 2px solid;
+        height: @site-padding * 3;
+        margin-top: 20px;
+        position: absolute;
+        right: -@site-column - @site-padding;
+        top: 50%;
+        width: @site-padding * 3;
+        .rotate-45;
+    }
 }
 .owl-item {
     .carousel-cards__item {
         width: 100% !important;
-    }
-    .owl-prev {
-        background-color: red;
-        position: absolute;
     }
 }

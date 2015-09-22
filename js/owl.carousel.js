@@ -2700,7 +2700,7 @@
 	Navigation.Defaults = {
 		nav: false,
 		navRewind: true,
-		navText: [ 'Назад', 'Далее' ],
+		navText: [ '', '' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
