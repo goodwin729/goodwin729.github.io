@@ -111,7 +111,7 @@
     }
     .carousel {
         &-inner {
-            height: @site-column * 7;
+            //height: @site-column * 7;
         }
         &-cards {
             .row {
@@ -123,6 +123,15 @@
         }
         &-image {
             left: 0;
+        }
+        .carousel-indicators {
+            bottom: -@site-column;
+            li {
+                border-color: @white;
+                &.active {
+                    background-color: @white;
+                }
+            }
         }
     }
     .slider {
