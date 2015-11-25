@@ -1,0 +1,42 @@
+/* Max width 767px */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .header {
+        text-align: center;
+    }
+    .article {
+        padding-bottom: @site-padding * 2;
+        &__image {
+            display: none;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+        }
+        &__app {
+            display: block;
+            margin: @site-padding * 2 0;
+            text-align: center;
+        }
+    }
+    .gallery {
+        padding-top: @site-padding * 2;
+        &__list {
+            padding-top: @site-padding * 2;
+        }
+        &__item {
+            padding-bottom: 0;
+        }
+    }
+    .footer {
+        padding: @site-padding * 3 0 @site-padding * 2 0;
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

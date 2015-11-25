@@ -1,0 +1,48 @@
+.footer {
+    background-color: @black;
+    padding: @site-padding * 6 0;
+    position: relative;
+    text-align: center;
+    &__logo {
+        display: block;
+        left: 50%;
+        margin-left: -(@site-column + @site-padding * 2) / 2;
+        position: absolute;
+        top: 0;
+        width: @site-column + @site-padding * 2;
+        &_img {
+            position: relative;
+            top: -8px;
+            z-index: 5;
+        }
+        &:before {
+            content: '';
+            background-color: @black;
+            border-radius: 50%;
+            display: block;
+            height: @site-column;
+            left: 50%;
+            margin-left: -@site-column / 2;
+            position: absolute;
+            top: -@site-padding * 2;
+            width: @site-column;
+            z-index: 1;
+        }
+    }
+    &__title {
+        color: @white-dark;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 34px;
+        margin: @site-padding 0;
+        padding-top: @site-padding + @site-padding / 2;
+    }
+    &__text {
+        color: @white-dark;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        margin: @site-padding 0;
+    }
+}

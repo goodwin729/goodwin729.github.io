@@ -1,0 +1,56 @@
+body a {
+    color: @brand-color;
+    text-decoration: none;
+    &:hover{
+        color: @gray-dark;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+    &:visited {
+        color: @brand-color;
+    }
+    &:not(:hover) {
+        transition: 0.25s;
+    }
+}
+*:focus,
+*:visited,
+a:focus{
+    color: @gray-dark;
+    outline: none;
+}
+b, strong {
+    font-weight: 500;
+}
+.form-control {
+    box-shadow: none;
+}
+
+.left{ float: left;}
+.right{ float: right;}
+label{
+    font-weight: normal;
+}
+textarea:focus,
+input:focus{
+    box-shadow: none;
+}
+/*---------------*/
+.center-el{ text-align: center;}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+
+@import "variables.less";
+
+@import "article.less";
+@import "footer.less";
+@import "gallery.less";
+@import "header.less";
+
+@import "media/media-960-1199.less";
+@import "media/media-768-959.less";
+@import "media/media-320-767.less";

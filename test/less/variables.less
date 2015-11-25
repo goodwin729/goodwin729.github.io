@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700);
+@import "bootstrap/bootstrap.less";
+
+@border-radius-base: 0;
+/*----fonts----*/
+@brand-font: 'Open Sans', serif;
+@font-family-base: 'Open Sans';
+@font-size-base: 14px;
+/*---general---*/
+@grid-columns: 12;
+@container-md: 960px;
+@container-lg: 1200px;
+@site-column: 70px;
+@grid-gutter-width: 30px;
+@site-padding: @grid-gutter-width / 2;
+/*---colors----*/
+@white: #fff;
+@white-dark: #f8f8f8;
+@gray-light: #eee;
+@gray: #ccc;
+@gray-dark: #777777;
+@black: #292929;
+
+@brand-color: #dba84d;
+
+@body-bg: @white;
+
+
+body,html{
+    font-family: @font-family-base;
+    height: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.transition-0_5s{
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.transition-1s{
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}

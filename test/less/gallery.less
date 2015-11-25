@@ -1,0 +1,78 @@
+.gallery {
+    background-color: @white-dark;
+    padding: @site-padding * 4 0;
+    opacity: 0;
+    &.visible{
+        opacity: 1;
+        .transition-1s;
+    }
+    &__title {
+        color: @black;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 40px;
+        padding: @site-padding 0;
+        text-align: center;
+    }
+    &__text {
+        color: @gray-dark;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: @site-padding 0;
+        text-align: center;
+        & + .row .gallery__list {
+            padding-top: @site-padding;
+        }
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    &__item {
+        padding: @site-padding;
+    }
+    &__link {
+        display: block;
+        position: relative;
+        &:before {
+            content: '';
+            background: @brand-color;
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            .transition-0_5s;
+        }
+        &:after {
+            content: '';
+            background: url("../img/ico-eye.png") no-repeat center center;
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            .transition-0_5s;
+        }
+        &:hover {
+            &:before {
+                opacity: 0.6;
+            }
+            &:after {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+    }
+}
