@@ -23,19 +23,19 @@
               <li class="personal-item">
                 <a href="#" title="" class="personal-link">
                   <span class="personal-text">Compte</span>
-                  <i class="icon icon-med personal-icon">&nbsp;</i>
+                  <i class="icon icon-med icon-pers personal-icon">&nbsp;</i>
                 </a>
               </li>
               <li class="personal-item">
                 <a href="#" title="" class="personal-link">
                   <span class="personal-text">Panier (0)</span>
-                  <i class="icon icon-med personal-icon">&nbsp;</i>
+                  <i class="icon icon-med icon-cart personal-icon">&nbsp;</i>
                 </a>
               </li>
               <li class="personal-item">
                 <a href="#" title="" class="personal-link">
                   <span class="personal-text">Rechercher</span>
-                  <i class="icon icon-med personal-icon">&nbsp;</i>
+                  <i class="icon icon-med icon-search personal-icon">&nbsp;</i>
                 </a>
               </li>
             </ul>
@@ -65,10 +65,66 @@
       </div>
     
       <section class="menu-drop">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
       
-            123
+            <div class="menu-drop-col">
+              <h3 class="menu-drop-title">
+                Epicerie
+                <span class="menu-drop-subtitle">subtitle about category</span>
+              </h3>
+            </div>
+      
+            <ul class="menu-drop-list menu-drop-col">
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Nouveautés</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Riz et pâtes</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Huiles et Vinaigres</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Epices, sauces et condiments</a>
+              </li>
+            </ul>
+      
+            <ul class="menu-drop-list menu-drop-col">
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Légumes et fruits secs</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Apéritif</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Biscuit et Patisserie</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Confiseries et chocolats</a>
+              </li>
+            </ul>
+      
+            <ul class="menu-drop-list menu-drop-col">
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Petit déjeuner</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Terrines et fois gras</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Epicerie de la mer</a>
+              </li>
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link">Univers de l'enfant</a>
+              </li>
+            </ul>
+      
+            <ul class="menu-drop-list menu-drop-col">
+              <li class="menu-drop-item">
+                <a href="#" title="" class="menu-drop-link menu-drop-more">view all products</a>
+              </li>
+            </ul>
       
           </div>
         </div>
@@ -263,22 +319,22 @@
               <ul class="footer-sharing-list">
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
-                    <i class="icon">&nbsp;</i>
+                    <i class="icon icon-fb">&nbsp;</i>
                   </a>
                 </li>
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
-                    <i class="icon">&nbsp;</i>
+                    <i class="icon icon-go">&nbsp;</i>
                   </a>
                 </li>
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
-                    <i class="icon">&nbsp;</i>
+                    <i class="icon icon-gr">&nbsp;</i>
                   </a>
                 </li>
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
-                    <i class="icon">&nbsp;</i>
+                    <i class="icon icon-pi">&nbsp;</i>
                   </a>
                 </li>
               </ul>
@@ -286,11 +342,17 @@
     
             <div class="footer-developer col-lg-5">
               Une création Too Pixel
-              <i class="icon footer-developer-icon">&nbsp;</i>
+              <i class="icon icon-swiss footer-developer-icon">&nbsp;</i>
             </div>
     
           </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $( ".nav-link" ).click(function() {
+        $(this).toggleClass( "active" );
+        $( ".menu-drop" ).toggleClass( "open" );
+      });
+    </script> 
 </body>
-</html>
