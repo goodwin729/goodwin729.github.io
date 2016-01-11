@@ -20,23 +20,51 @@
     
           <div class="personal">
             <ul class="personal-list right">
-              <li class="personal-item">
-                <a href="#" title="" class="personal-link">
+              <li class="personal-item cabinet">
+                <a href="#" title="" class="personal-link cabinet-trigger">
                   <span class="personal-text">Compte</span>
                   <i class="icon icon-med icon-pers personal-icon">&nbsp;</i>
                 </a>
-              </li>
+                <div class="cabinet-drop">
+                  <h3 class="cabinet-title">Orders</h3>
+                  <div class="form-field cabinet-field">
+                    <label class="cabinet-label">track my orders</label>
+                    <div class="form-value">
+                      <input type="text" class="input cabinet-input" placeholder="Order ID / Email">
+                    </div>
+                  </div>
+                  <div class="cabinet-field">
+                    <a href="#" title="" class="btn btn-width cabinet-btn">sign in</a>
+                  </div>
+                  <div class="cabinet-field">
+                    <p class="cabinet-text">
+                      dont have an account? <a href="#" title="" class="cabinet-link">register now</a>
+                    </p>
+                  </div>
+                </div>
               <li class="personal-item">
-                <a href="#" title="" class="personal-link">
+                <a href="cart.html" title="" class="personal-link">
                   <span class="personal-text">Panier (0)</span>
                   <i class="icon icon-med icon-cart personal-icon">&nbsp;</i>
                 </a>
               </li>
-              <li class="personal-item">
-                <a href="#" title="" class="personal-link">
+              <li class="personal-item search">
+                <a href="#" title="" class="personal-link search-trigger">
                   <span class="personal-text">Rechercher</span>
                   <i class="icon icon-med icon-search personal-icon">&nbsp;</i>
                 </a>
+                <div class="search-drop">
+                  <h3 class="search-title">rechercher</h3>
+                  <div class="form-field search-field">
+                    <label class="form-label search-label">Enter your search term here</label>
+                    <div class="form-value">
+                      <input type="text" class="input search-input" placeholder="Enter your search term here">
+                      <button class="btn btn-form form-btn search-btn">
+                        <i class="icon icon-med icon-search personal-icon">&nbsp;</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -50,7 +78,7 @@
               </li>
               <li class="nav-item nav-logo col-lg-2 col-xs-3">
                 <a href="javascript:void(0);" title="" class="nav-link">
-                  <img src="img/logo.png" alt="">
+                  <img src="img/logo-black.png" alt="">
                 </a>
               </li>
               <li class="nav-item col-lg-5 col-xs-4">
@@ -167,11 +195,11 @@
       <div class="container">
         <div class="row">
     
-          <div class="product-image col-lg-6">
+          <div class="product-image col-lg-6 col-xs-12">
             <img src="img/product-b-001.jpg" alt="" class="product-img">
           </div>
     
-          <div class="product-description col-lg-6">
+          <div class="product-description col-lg-6 col-xs-12">
     
             <header class="product-header">
               <ul class="product-info-list">
@@ -185,14 +213,51 @@
                 <li class="product-info-item product-fabricator">TVA incl.</li>
               </ul>
             </header>
+    
+            <div class="product-image product-image-mobile">
+              <img src="img/product-b-001.jpg" alt="" class="product-img">
+            </div>
+    
             <section class="product-content">
               <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante porta, luctus urna a, posuere ligula. Maecenas at fringilla sapien. Praesent aliquet mattis auctor. Curabitur aliquam, lacus pellentesque semper elementum, turpis sapien aliquet dui, eget ornare lorem enim ac erat. Nunc semper neque odio, quis interdum felis facilisis nec.</p>
     
               <h4 class="product-subtitle">ingredients</h4>
               <p class="product-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante porta, luctus urna a, posuere ligula. Maecenas at fringilla sapien. Praesent aliquet mattis auctor. Curabitur aliquam, lacus pellentesque semper elementum, turpis sapien aliquet dui, eget ornare lorem enim ac erat. Nunc semper neque odio, quis interdum felis facilisis nec.</p>
+              <h4 class="product-subtitle product-storage">storage: in cool and dry place away from light</h4>
+              <div class="product-subtitle product-cooking">
+                <i class="icon icon-med icon-cook">&nbsp;</i> conseils de preparation
+                <div class="tooltip">
+                  <h4 class="tooltip-title">conseils de preparation</h4>
+                  <p class="tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante porta, luctus urna a, posuere ligula. Maecenas at fringilla sapien. Praesent aliquet mattis auctor. Curabitur aliquam, lacus pellentesque semper elementum, turpis sapien aliquet dui, eget ornare lorem enim ac erat. Nunc semper neque odio, quis interdum felis facilisis nec.</p>
+                </div>
+              </div>
             </section>
+    
             <footer class="product-footer">
-              132
+    
+              <form action="#" class="form">
+                <div class="cart-add">
+                  <ul class="cart-add-list">
+                    <li class="cart-add-item">
+                      <div class="form-value">
+                        <input type="number" style="width: 50px;">
+                      </div>
+                    </li>
+                    <li class="cart-add-item">
+                      <div class="form-value">
+                        <a href="#" title="" class="btn btn-black">ajouter au panier</a>
+                      </div>
+                    </li>
+                    <li class="cart-add-item cart-add-item-delivery">
+                      <div class="cart-delivery">
+                        <img src="img/conditions-ico-01-black.png" alt="" class="cart-delivery-img">
+                        <p class="cart-delivery-text">Guaranteed free delivery of your<br>  purchased goods up to 48h!</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+    
             </footer>
     
           </div>
@@ -204,9 +269,8 @@
       <div class="container">
         <div class="row">
     
-          <div class="title">
-            <h2 class="title-text">produits nouveautés</h2>
-            <h4 class="title-sub">subtitle about products goes here</h4>
+          <div class="title title-decor">
+            <h2 class="title-decor-text">produits nouveautés</h2>
           </div>
     
           <ul class="catalog-list">
@@ -284,7 +348,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer-big">
         <div class="container">
           <div class="row">
     
@@ -374,5 +438,32 @@
           </div>
         </div>
     </footer>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $( ".nav-link" ).click(function() {
+        $(this).toggleClass( "active" );
+        $( ".menu-drop" ).toggleClass( "open" );
+      });
+      $( ".search-trigger" ).click(function() {
+        $(".search").toggleClass( "active" );
+      });
+      $( ".cabinet-trigger" ).click(function() {
+        $(".cabinet").toggleClass( "active" );
+      });
+      $( ".faq-title" ).click(function() {
+        $(this).offsetParent().toggleClass( "active" );
+      });
+      $( ".side-menu-trigger-up" ).click(function() {
+        $(".side-menu").addClass( "active" );
+      });
+      $( ".side-menu-trigger-down" ).click(function() {
+        $(".side-menu").removeClass( "active" );
+      });
+      /*$( ".search-drop" ).mouseleave(function() {
+        $( ".search" ).removeClass("active");
+      });*/
+    </script>
 </body>
 </html>
