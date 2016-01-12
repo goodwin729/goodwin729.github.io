@@ -66,6 +66,11 @@
                   </div>
                 </div>
               </li>
+              <li class="personal-item personal-item-mobile">
+                <button href="javascript:void(0);" title="" class="personal-link menu-drop-mobile-trigger">
+                  <i class="icon icon-med icon-sandwich personal-icon">&nbsp;</i>
+                </button>
+              </li>
             </ul>
           </div>
     
@@ -162,7 +167,58 @@
         <div class="container">
           <div class="row">
       
-            123
+            <ul class="menu-drop-mobile-list">
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Epicerie</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Epicerie du monde</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Coffrets cadeaux</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Luxe</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Cave et brasserie</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link">Bio / sans Gluten</a>
+              </li>
+              <li class="menu-drop-mobile-item">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">
+                  <div class="right">
+                    <i class="icon icon-fb">&nbsp;</i>
+                    <i class="icon icon-go">&nbsp;</i>
+                    <i class="icon icon-gr">&nbsp;</i>
+                    <i class="icon icon-pi">&nbsp;</i>
+                  </div>
+                  Follow us
+                </a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Oui sommes-nous</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Conditions Generales de Vente</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Mentions Legales</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Presse</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Site Map</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">Vous souhaitez référencer vos produits?</a>
+              </li>
+              <li class="menu-drop-mobile-item-sub">
+                <a href="#" title="" class="menu-drop-mobile-link menu-drop-mobile-link-sub">FAQ</a>
+              </li>
+            </ul>
       
           </div>
         </div>
@@ -465,6 +521,9 @@
       });
       $( ".side-menu-trigger-down" ).click(function() {
         $(".side-menu").removeClass( "active" );
+      });
+      $( ".menu-drop-mobile-trigger" ).click(function() {
+        $("body").toggleClass( "mobile" );
       });
       /*$( ".search-drop" ).mouseleave(function() {
         $( ".search" ).removeClass("active");
