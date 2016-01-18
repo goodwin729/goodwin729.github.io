@@ -38,7 +38,7 @@
                   </div>
                   <div class="cabinet-field">
                     <p class="cabinet-text">
-                      dont have an account? <a href="#" title="" class="cabinet-link">register now</a>
+                      <a href="#" title="" class="cabinet-link">dont have an account? register now</a>
                     </p>
                   </div>
                 </div>
@@ -371,7 +371,7 @@
         <div class="container">
           <div class="row">
     
-            <div class="footer-copy col-lg-5 col-md-5 col-xs-12">
+            <div class="footer-copy footer-item col-lg-5 col-md-5 col-xs-12">
               <ul class="footer-copy-list">
                 <li class="footer-copy-item">Copyright&nbsp;&copy;&nbsp;2015 La Grande Epicerie Suisse</li>
                 <li class="footer-copy-item">Tel: +41 24 481 84 67</li>
@@ -379,7 +379,7 @@
               </ul>
             </div>
     
-            <div class="footer-sharing col-lg-2 col-md-2 col-xs-12">
+            <div class="footer-sharing footer-item col-lg-2 col-md-2 col-xs-12">
               <ul class="footer-sharing-list">
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
@@ -404,7 +404,7 @@
               </ul>
             </div>
     
-            <div class="footer-developer col-lg-5 col-md-5 col-xs-12">
+            <div class="footer-developer footer-item col-lg-5 col-md-5 col-xs-12">
               Une création Too Pixel
               <i class="icon icon-swiss footer-developer-icon">&nbsp;</i>
             </div>
@@ -423,9 +423,12 @@
       $( ".search-trigger" ).click(function() {
         $(".search").toggleClass( "active" );
       });
+    
       $( ".cabinet-trigger" ).click(function() {
         $(".cabinet").toggleClass( "active" );
       });
+    
+    
       $( ".faq-title" ).click(function() {
         $(this).offsetParent().toggleClass( "active" );
       });
@@ -441,5 +444,20 @@
       /*$( ".search-drop" ).mouseleave(function() {
         $( ".search" ).removeClass("active");
       });*/
+    
+      /*$(document).mouseup(function (e)
+       {
+       var container = $(".cabinet-drop");
+    
+       if (!container.is(e.target) // if the target of the click isn't the container...
+       && container.has(e.target).length === 0) // ... nor a descendant of the container
+       {
+       container.removeClass("active");
+       }
+       });*/
+      /*
+       $(document).mousedown(function() {
+       $(".cabinet").removeClass("active");
+       });*/
     </script>
 </body>
