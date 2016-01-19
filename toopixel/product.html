@@ -281,7 +281,7 @@
               <p class="product-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante porta, luctus urna a, posuere ligula. Maecenas at fringilla sapien. Praesent aliquet mattis auctor. Curabitur aliquam, lacus pellentesque semper elementum, turpis sapien aliquet dui, eget ornare lorem enim ac erat. Nunc semper neque odio, quis interdum felis facilisis nec.</p>
               <h4 class="product-subtitle product-storage">storage: in cool and dry place away from light</h4>
               <div class="product-subtitle product-cooking">
-                <i class="icon icon-med icon-cook">&nbsp;</i> conseils de preparation
+                <a href="javascript:;" title="" class="tooltip-trigger"><i class="icon icon-med icon-cook">&nbsp;</i> conseils de preparation</a>
                 <div class="tooltip">
                   <h4 class="tooltip-title">conseils de preparation</h4>
                   <p class="tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante porta, luctus urna a, posuere ligula. Maecenas at fringilla sapien. Praesent aliquet mattis auctor. Curabitur aliquam, lacus pellentesque semper elementum, turpis sapien aliquet dui, eget ornare lorem enim ac erat. Nunc semper neque odio, quis interdum felis facilisis nec.</p>
@@ -498,16 +498,41 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-      $( ".nav-link" ).click(function() {
+      $( ".nav-link" ).click(function(event) {
         $(this).toggleClass( "active" );
         $( ".menu-drop" ).toggleClass( "open" );
       });
-      $( ".search-trigger" ).click(function() {
+    
+      $( ".search-trigger" ).click(function(event) {
         $(".search").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest( ".search" ).length )
+          return;
+        $( ".search" ).removeClass( "active" );
+        event.stopPropagation();
       });
     
       $( ".cabinet-trigger" ).click(function() {
         $(".cabinet").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest(".cabinet").length )
+          return;
+        $(".cabinet").removeClass("active");
+        event.stopPropagation();
+      });
+    
+      $( ".tooltip-trigger" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".tooltip").length )
+          return;
+        $(".tooltip").offsetParent().removeClass("is-active");
+        event.stopPropagation();
       });
     
     

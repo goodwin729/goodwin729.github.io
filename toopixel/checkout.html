@@ -257,7 +257,7 @@
           </div>
     
           <div class="row">
-            <div class="secure col-lg-7  col-md-8 col-sm-12">
+            <div class="secure col-lg-9  col-md-8 col-sm-12">
     
               <ul class="secure-list">
                 <li class="secure-item active">
@@ -401,40 +401,43 @@
             </div>
     
             <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="row">
     
-              <div class="order  col-sm-6">
-                <h3 class="order-title">order summary</h3>
-                <ul class="order-list">
-                  <li class="order-item">
-                    <span class="order-label left">3 item(s)</span>
-                    <span class="order-value right">10,000.000 CHF</span>
-                  </li>
-                  <li class="order-item">
-                    <div class="form-field">
-                      <div class="form-value">
-                        <input type="text" class="input" placeholder="Gift certificate or promo code">
-                        <button class="btn btn-form form-btn">apply</button>
+                <div class="order col-lg-12  col-sm-6">
+                  <h3 class="order-title">order summary</h3>
+                  <ul class="order-list">
+                    <li class="order-item">
+                      <span class="order-label left">3 item(s)</span>
+                      <span class="order-value right">10,000.000 CHF</span>
+                    </li>
+                    <li class="order-item">
+                      <div class="form-field">
+                        <div class="form-value">
+                          <input type="text" class="input" placeholder="Gift certificate or promo code">
+                          <button class="btn btn-form form-btn">apply</button>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="order-item">
-                    <span class="order-label left">Order total:</span>
-                    <span class="order-value right">10,000.000 CHF</span>
-                  </li>
-                </ul>
-              </div>
+                    </li>
+                    <li class="order-item">
+                      <span class="order-label left">Order total:</span>
+                      <span class="order-value right">10,000.000 CHF</span>
+                    </li>
+                  </ul>
+                </div>
     
-              <div class="order  col-sm-6">
-                <h3 class="order-title">products in your order</h3>
-                <ul class="order-list">
-                  <li class="order-item">
-                    <span class="order-product">Tomato sauce with summer truffle</span>
-                    <span class="order-cost">3 x 10,000.000 CHF</span>
-                  </li>
-                </ul>
-              </div>
+                <div class="order col-lg-12  col-sm-6">
+                  <h3 class="order-title">products in your order</h3>
+                  <ul class="order-list">
+                    <li class="order-item">
+                      <span class="order-product">Tomato sauce with summer truffle</span>
+                      <span class="order-cost">3 x 10,000.000 CHF</span>
+                    </li>
+                  </ul>
+                </div>
     
+              </div>
             </div>
+    
           </div>
     
         </div>
@@ -535,16 +538,41 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-      $( ".nav-link" ).click(function() {
+      $( ".nav-link" ).click(function(event) {
         $(this).toggleClass( "active" );
         $( ".menu-drop" ).toggleClass( "open" );
       });
-      $( ".search-trigger" ).click(function() {
+    
+      $( ".search-trigger" ).click(function(event) {
         $(".search").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest( ".search" ).length )
+          return;
+        $( ".search" ).removeClass( "active" );
+        event.stopPropagation();
       });
     
       $( ".cabinet-trigger" ).click(function() {
         $(".cabinet").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest(".cabinet").length )
+          return;
+        $(".cabinet").removeClass("active");
+        event.stopPropagation();
+      });
+    
+      $( ".tooltip-trigger" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".tooltip").length )
+          return;
+        $(".tooltip").offsetParent().removeClass("is-active");
+        event.stopPropagation();
       });
     
     
