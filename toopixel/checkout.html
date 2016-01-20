@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
-
-  <!--[if lte IE 8]<script src="oldies/oldies.js" charset="utf-8"></script><![endif]-->
 </head>
 <body>
     <header class="header header-inner">
@@ -267,8 +266,9 @@
                   </h3>
     
                   <div class="secure-content">
+    
                     <div class="form">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
     
                         <h3 class="form-title">Returning customer</h3>
                         <div class="form-field">
@@ -293,7 +293,8 @@
                         </div>
     
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
     
                         <h3 class="form-title">New customer</h3>
                         <div class="form-field">
@@ -309,11 +310,12 @@
                           </div>
                         </div>
                         <div class="form-footer form-field">
-                          <a href="#" title="" class="btn btn-black right">register</a>
+                          <a href="#" title="" class="secure-btn btn btn-black right">register</a>
                         </div>
     
                       </div>
                     </div>
+    
                   </div>
     
                 </li>
@@ -323,42 +325,42 @@
                   <div class="secure-content">
                     <div class="form">
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label left">First Name *</label>
                         <div class="form-value">
                           <input type="text" class="input">
                         </div>
                       </div>
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label left">Last Name *</label>
                         <div class="form-value">
                           <input type="text" class="input">
                         </div>
                       </div>
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label left">Email *</label>
                         <div class="form-value">
                           <input type="text" class="input">
                         </div>
                       </div>
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label left">Phone</label>
                         <div class="form-value">
                           <input type="text" class="input">
                         </div>
                       </div>
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label left">Address *</label>
                         <div class="form-value">
                           <textarea class="textarea"></textarea>
                         </div>
                       </div>
     
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="form-field">
                           <label class="form-label left">City *</label>
                           <div class="form-value">
@@ -374,11 +376,11 @@
                       </div>
     
                       <span class="clearfix">&nbsp;</span>
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item secure-content-item--radio form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label class="form-label">Are shipping and billing address the same?</label>
                       </div>
     
-                      <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="secure-content-item secure-content-item--radio form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="radiobox active">
                           <input type="checkbox" class="radiobox-item">
                           <label class="radiobox-label">Yes</label>
@@ -389,8 +391,8 @@
                         </div>
                       </div>
     
-                      <div class="form-footer form-footer-border col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <a href="#" title="" class="btn btn-black right">continue</a>
+                      <div class="secure-content-item form-footer form-footer-border col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="#" title="" class="btn btn-black secure-btn right">continue</a>
                       </div>
     
                     </div>
@@ -543,7 +545,7 @@
     </footer>
     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
     <script>
       $( ".nav-link" ).click(function(event) {
         $(this).toggleClass( "active" );
@@ -613,6 +615,45 @@
        $(document).mousedown(function() {
        $(".cabinet").removeClass("active");
        });*/
+      $(document).ready(function(){
+    
+        $("#loginform").validate({
+    
+          rules:{
+    
+            login:{
+              required: true,
+              minlength: 4,
+              maxlength: 16,
+            },
+    
+            pswd:{
+              required: true,
+              minlength: 6,
+              maxlength: 16,
+            },
+          },
+    
+          messages:{
+    
+            login:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Логин должен быть минимум 4 символа",
+              maxlength: "Максимальное число символо - 16",
+            },
+    
+            pswd:{
+              required: true,
+              minlength: "Пароль должен быть минимум 6 символа",
+              maxlength: 16,
+            },
+    
+          }
+    
+        });
+    
+    
+      }); //end of ready
     </script>
 </body>
 </html>
