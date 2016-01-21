@@ -287,9 +287,14 @@
         </div>
       </div>
     </section>
-    <section class="filter mobile-erase">
+    <section class="filter">
       <div class="container">
         <div class="row">
+    
+          <a href="javascript:;" title="" class="filter-title">
+            <i class="filter-title-icon"></i>
+            Sort & Filter Products
+          </a>
     
           <ul class="filter-list">
             <li class="filter-item">
@@ -627,6 +632,18 @@
         if( $(event.target).closest(".tooltip").length )
           return;
         $(".tooltip").offsetParent().removeClass("is-active");
+        event.stopPropagation();
+      });
+    
+      $( ".filter-title" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".filter").length )
+          return;
+        $(".filter").offsetParent().removeClass("is-active");
         event.stopPropagation();
       });
     

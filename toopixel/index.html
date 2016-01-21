@@ -492,6 +492,18 @@
         event.stopPropagation();
       });
     
+      $( ".filter-title" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".filter").length )
+          return;
+        $(".filter").offsetParent().removeClass("is-active");
+        event.stopPropagation();
+      });
+    
     
       $( ".faq-title" ).click(function() {
         $(this).offsetParent().toggleClass( "active" );
