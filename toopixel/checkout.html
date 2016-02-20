@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
-
-  <!--[if lte IE 8]<script src="oldies/oldies.js" charset="utf-8"></script><![endif]-->
 </head>
 <body>
     <header class="header header-inner">
@@ -21,7 +20,7 @@
           <div class="personal">
             <ul class="personal-list right">
               <li class="personal-item cabinet">
-                <a href="#" title="" class="personal-link cabinet-trigger">
+                <a href="javascript:;" title="" class="personal-link cabinet-trigger">
                   <span class="personal-text">Compte</span>
                   <i class="icon icon-med icon-pers personal-icon">&nbsp;</i>
                 </a>
@@ -38,7 +37,7 @@
                   </div>
                   <div class="cabinet-field">
                     <p class="cabinet-text">
-                      dont have an account? <a href="#" title="" class="cabinet-link">register now</a>
+                      <a href="#" title="" class="cabinet-link">dont have an account? register now</a>
                     </p>
                   </div>
                 </div>
@@ -49,7 +48,7 @@
                 </a>
               </li>
               <li class="personal-item search">
-                <a href="#" title="" class="personal-link search-trigger">
+                <a href="javascript:;" title="" class="personal-link search-trigger">
                   <span class="personal-text">Rechercher</span>
                   <i class="icon icon-med icon-search personal-icon">&nbsp;</i>
                 </a>
@@ -257,136 +256,146 @@
           </div>
     
           <div class="row">
-            <div class="secure col-lg-7  col-md-8 col-sm-12">
+            <div class="secure col-lg-9  col-md-8 col-sm-12 col-xs-12">
     
               <ul class="secure-list">
-                <li class="secure-item active">
-                  <h3 class="secure-header">1. Please sign in</h3>
+                <li class="secure-item done">
+                  <h3 class="secure-header">
+                    <a href="#" title="" class="secure-edit">edit</a>
+                    1. Please sign in
+                  </h3>
     
-                  <div class="form">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="secure-content">
     
-                      <h3 class="form-title">Returning customer</h3>
-                      <div class="form-field">
-                        <label class="form-label">First Name *</label>
-                        <div class="form-value">
-                          <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                    <div class="form">
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    
+                        <h3 class="form-title">Returning customer</h3>
+                        <div class="form-field">
+                          <label class="form-label">First Name *</label>
+                          <div class="form-value">
+                            <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-field">
-                        <label class="form-label left">Password *</label>
-                        <a href="#" title="" class="form-label right">Forgot your password?</a>
-                        <div class="form-value">
-                          <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                        <div class="form-field">
+                          <label class="form-label left">Password *</label>
+                          <a href="#" title="" class="form-label right">Forgot your password?</a>
+                          <div class="form-value">
+                            <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-footer form-field">
-                        <div class="checkbox left">
-                          <input type="checkbox" class="checkbox-item">
-                          <label class="checkbox-label">Remember me</label>
+                        <div class="form-footer form-field">
+                          <div class="checkbox left">
+                            <input type="checkbox" class="checkbox-item">
+                            <label class="checkbox-label">Remember me</label>
+                          </div>
+                          <a href="#" title="" class="btn btn-black right">sign in</a>
                         </div>
-                        <a href="#" title="" class="btn btn-black right">sign in</a>
+    
                       </div>
     
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    
+                        <h3 class="form-title">New customer</h3>
+                        <div class="form-field">
+                          <div class="radiobox active">
+                            <input type="checkbox" class="radiobox-item">
+                            <label class="radiobox-title">Register</label>
+                            <label class="radiobox-label radiobox-info">Create a permanent account and use it for checkout</label>
+                          </div>
+                          <div class="radiobox">
+                            <input type="checkbox" class="radiobox-item">
+                            <label class="radiobox-title">Checkout as a guest</label>
+                            <label class="radiobox-label radiobox-info">Quick checkout with no account creating required</label>
+                          </div>
+                        </div>
+                        <div class="form-footer form-field">
+                          <a href="#" title="" class="secure-btn btn btn-black right">register</a>
+                        </div>
+    
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     
-                      <h3 class="form-title">New customer</h3>
-                      <div class="form-field">
-                        <div class="radiobox active">
-                          <input type="checkbox" class="radiobox-item">
-                          <label class="radiobox-title">Register</label>
-                          <label class="radiobox-label radiobox-info">Create a permanent account and use it for checkout</label>
-                        </div>
-                        <div class="radiobox">
-                          <input type="checkbox" class="radiobox-item">
-                          <label class="radiobox-title">Checkout as a guest</label>
-                          <label class="radiobox-label radiobox-info">Quick checkout with no account creating required</label>
-                        </div>
-                      </div>
-                      <div class="form-footer form-field">
-                        <a href="#" title="" class="btn btn-black right">register</a>
-                      </div>
-    
-                    </div>
                   </div>
     
                 </li>
-                <li class="secure-item">
+                <li class="secure-item active">
                   <h3 class="secure-header">2. Billing and Shipping Address</h3>
     
-                  <div class="form">
+                  <div class="secure-content">
+                    <div class="form">
     
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label left">First Name *</label>
-                      <div class="form-value">
-                        <input type="text" class="input">
-                      </div>
-                    </div>
-    
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label left">Last Name *</label>
-                      <div class="form-value">
-                        <input type="text" class="input">
-                      </div>
-                    </div>
-    
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label left">Email *</label>
-                      <div class="form-value">
-                        <input type="text" class="input">
-                      </div>
-                    </div>
-    
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label left">Phone</label>
-                      <div class="form-value">
-                        <input type="text" class="input">
-                      </div>
-                    </div>
-    
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label left">Address *</label>
-                      <div class="form-value">
-                        <textarea class="textarea"></textarea>
-                      </div>
-                    </div>
-    
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-field">
-                        <label class="form-label left">City *</label>
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label left">First Name *</label>
                         <div class="form-value">
-                          <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          <input type="text" class="input">
                         </div>
                       </div>
-                      <div class="form-field">
-                        <label class="form-label left">Zip Code *</label>
+    
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label left">Last Name *</label>
                         <div class="form-value">
-                          <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          <input type="text" class="input">
                         </div>
                       </div>
-                    </div>
     
-                    <span class="clearfix">&nbsp;</span>
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <label class="form-label">Are shipping and billing address the same?</label>
-                    </div>
-    
-                    <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                      <div class="radiobox active">
-                        <input type="checkbox" class="radiobox-item">
-                        <label class="radiobox-label">Yes</label>
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label left">Email *</label>
+                        <div class="form-value">
+                          <input type="text" class="input">
+                        </div>
                       </div>
-                      <div class="radiobox">
-                        <input type="checkbox" class="radiobox-item">
-                        <label class="radiobox-label">No</label>
+    
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label left">Phone</label>
+                        <div class="form-value">
+                          <input type="text" class="input">
+                        </div>
                       </div>
-                    </div>
     
-                    <div class="form-footer form-footer-border col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <a href="#" title="" class="btn btn-black right">continue</a>
-                    </div>
+                      <div class="secure-content-item form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label left">Address *</label>
+                        <div class="form-value">
+                          <textarea class="textarea"></textarea>
+                        </div>
+                      </div>
     
+                      <div class="secure-content-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-field">
+                          <label class="form-label left">City *</label>
+                          <div class="form-value">
+                            <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          </div>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-label left">Zip Code *</label>
+                          <div class="form-value">
+                            <input type="text" class="input" placeholder="Saisissez votre addresse e-mail">
+                          </div>
+                        </div>
+                      </div>
+    
+                      <span class="clearfix">&nbsp;</span>
+                      <div class="secure-content-item secure-content-item--radio form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label class="form-label">Are shipping and billing address the same?</label>
+                      </div>
+    
+                      <div class="secure-content-item secure-content-item--radio form-field col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="radiobox active">
+                          <input type="checkbox" class="radiobox-item">
+                          <label class="radiobox-label">Yes</label>
+                        </div>
+                        <div class="radiobox">
+                          <input type="checkbox" class="radiobox-item">
+                          <label class="radiobox-label">No</label>
+                        </div>
+                      </div>
+    
+                      <div class="secure-content-item form-footer form-footer-border col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="#" title="" class="btn btn-black secure-btn right">continue</a>
+                      </div>
+    
+                    </div>
                   </div>
     
                 </li>
@@ -400,41 +409,44 @@
     
             </div>
     
-            <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+              <div class="row">
     
-              <div class="order  col-sm-6">
-                <h3 class="order-title">order summary</h3>
-                <ul class="order-list">
-                  <li class="order-item">
-                    <span class="order-label left">3 item(s)</span>
-                    <span class="order-value right">10,000.000 CHF</span>
-                  </li>
-                  <li class="order-item">
-                    <div class="form-field">
-                      <div class="form-value">
-                        <input type="text" class="input" placeholder="Gift certificate or promo code">
-                        <button class="btn btn-form form-btn">apply</button>
+                <div class="order col-lg-12  col-md-12 col-sm-6 col-xs-12">
+                  <h3 class="order-title">order summary</h3>
+                  <ul class="order-list">
+                    <li class="order-item">
+                      <span class="order-label left">3 item(s)</span>
+                      <span class="order-value right">10,000.000 CHF</span>
+                    </li>
+                    <li class="order-item">
+                      <div class="form-field">
+                        <div class="form-value">
+                          <input type="text" class="input" placeholder="Gift certificate or promo code">
+                          <button class="btn btn-form form-btn">apply</button>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="order-item">
-                    <span class="order-label left">Order total:</span>
-                    <span class="order-value right">10,000.000 CHF</span>
-                  </li>
-                </ul>
-              </div>
+                    </li>
+                    <li class="order-item">
+                      <span class="order-label left">Order total:</span>
+                      <span class="order-value right">10,000.000 CHF</span>
+                    </li>
+                  </ul>
+                </div>
     
-              <div class="order  col-sm-6">
-                <h3 class="order-title">products in your order</h3>
-                <ul class="order-list">
-                  <li class="order-item">
-                    <span class="order-product">Tomato sauce with summer truffle</span>
-                    <span class="order-cost">3 x 10,000.000 CHF</span>
-                  </li>
-                </ul>
-              </div>
+                <div class="order col-lg-12 col-md-12  col-sm-6 col-xs-12">
+                  <h3 class="order-title">products in your order</h3>
+                  <ul class="order-list">
+                    <li class="order-item">
+                      <span class="order-product">Tomato sauce with summer truffle</span>
+                      <span class="order-cost">3 x 10,000.000 CHF</span>
+                    </li>
+                  </ul>
+                </div>
     
+              </div>
             </div>
+    
           </div>
     
         </div>
@@ -445,7 +457,7 @@
         <div class="container">
           <div class="row">
     
-            <div class="footer-about col-lg-6 col-md-6 col-sm-6">
+            <div class="footer-about col-lg-6 col-md-5 col-sm-3">
               <img src="img/footer-img.png" alt="" class="footer-about-img">
               <div class="footer-about-content">
                 <h4 class="footer-title">La Grande Epicerie suisse</h4>
@@ -454,7 +466,51 @@
               </div>
             </div>
     
-            <div class="footer-info col-lg-6 col-md-6 col-sm-6">
+            <div class="footer-info col-lg-6 col-md-7 col-sm-9">
+              <div class="footer-pay">
+                <div class="footer-select-block">
+                  <div class="footer-select">
+                    <h4 class="footer-title footer-select-title">language</h4>
+                    <select class="footer-select-item">
+                      <option>english</option>
+                    </select>
+                  </div>
+                  <div class="footer-select">
+                    <h4 class="footer-title footer-select-title">currency</h4>
+                    <select class="footer-select-item">
+                      <option>euro €</option>
+                    </select>
+                  </div>
+                </div>
+                <ul class="footer-pay-list">
+                  <li class="footer-pay-item">
+                    <a href="#" title="" class="footer-pay-link">
+                      <img src="img/icons/ico-pay-OK.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer-pay-item">
+                    <a href="#" title="" class="footer-pay-link">
+                      <img src="img/icons/ico-pay-visa.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer-pay-item">
+                    <a href="#" title="" class="footer-pay-link">
+                      <img src="img/icons/ico-pay-visa-electron.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer-pay-item">
+                    <a href="#" title="" class="footer-pay-link">
+                      <img src="img/icons/ico-pay-master.png" alt="">
+                    </a>
+                  </li>
+                  <li class="footer-pay-item">
+                    <a href="#" title="" class="footer-pay-link">
+                      <img src="img/icons/ico-pay-amex.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+    
               <div class="footer-nav">
                 <h4 class="footer-title">some title</h4>
                 <ul class="footer-nav-list">
@@ -490,7 +546,7 @@
         <div class="container">
           <div class="row">
     
-            <div class="footer-copy footer-item col-lg-5 col-md-5 col-xs-12">
+            <div class="footer-copy footer-item col-lg-5 col-md-5 col-sm-8 col-xs-12">
               <ul class="footer-copy-list">
                 <li class="footer-copy-item">Copyright&nbsp;&copy;&nbsp;2015 La Grande Epicerie Suisse</li>
                 <li class="footer-copy-item">Tel: +41 24 481 84 67</li>
@@ -498,7 +554,7 @@
               </ul>
             </div>
     
-            <div class="footer-sharing footer-item col-lg-2 col-md-2 col-xs-12">
+            <div class="footer-sharing footer-item col-lg-2 col-md-2 col-xs-12 tablet-portrait-erase">
               <ul class="footer-sharing-list">
                 <li class="footer-sharing-item">
                   <a href="#" title="" class="footer-sharing-link">
@@ -523,7 +579,7 @@
               </ul>
             </div>
     
-            <div class="footer-developer footer-item col-lg-5 col-md-5 col-xs-12">
+            <div class="footer-developer footer-item col-lg-5 col-md-5 col-sm-4 col-xs-12">
               Une création Too Pixel
               <i class="icon icon-swiss footer-developer-icon">&nbsp;</i>
             </div>
@@ -533,18 +589,55 @@
     </footer>
     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
     <script>
-      $( ".nav-link" ).click(function() {
+      $( ".nav-link" ).click(function(event) {
         $(this).toggleClass( "active" );
         $( ".menu-drop" ).toggleClass( "open" );
       });
-      $( ".search-trigger" ).click(function() {
+    
+      $( ".search-trigger" ).click(function(event) {
         $(".search").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest( ".search" ).length )
+          return;
+        $( ".search" ).removeClass( "active" );
+        event.stopPropagation();
       });
     
       $( ".cabinet-trigger" ).click(function() {
         $(".cabinet").toggleClass( "active" );
+      });
+      $(document).click( function(event){
+        if( $(event.target).closest(".cabinet").length )
+          return;
+        $(".cabinet").removeClass("active");
+        event.stopPropagation();
+      });
+    
+      $( ".tooltip-trigger" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".tooltip").length )
+          return;
+        $(".tooltip").offsetParent().removeClass("is-active");
+        event.stopPropagation();
+      });
+    
+      $( ".filter-title" ).click(function() {
+        event.stopPropagation();
+        $( this ).offsetParent().toggleClass( "is-active" );
+      });
+    
+      $(document).click( function(event){
+        if( $(event.target).closest(".filter").length )
+          return;
+        $(".filter").offsetParent().removeClass("is-active");
+        event.stopPropagation();
       });
     
     
@@ -578,6 +671,45 @@
        $(document).mousedown(function() {
        $(".cabinet").removeClass("active");
        });*/
+      $(document).ready(function(){
+    
+        $("#loginform").validate({
+    
+          rules:{
+    
+            login:{
+              required: true,
+              minlength: 4,
+              maxlength: 16,
+            },
+    
+            pswd:{
+              required: true,
+              minlength: 6,
+              maxlength: 16,
+            },
+          },
+    
+          messages:{
+    
+            login:{
+              required: "Это поле обязательно для заполнения",
+              minlength: "Логин должен быть минимум 4 символа",
+              maxlength: "Максимальное число символо - 16",
+            },
+    
+            pswd:{
+              required: true,
+              minlength: "Пароль должен быть минимум 6 символа",
+              maxlength: 16,
+            },
+    
+          }
+    
+        });
+    
+    
+      }); //end of ready
     </script>
 </body>
 </html>
