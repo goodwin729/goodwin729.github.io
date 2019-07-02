@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Dropwow</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="page">
+        <aside class="page__sidebar">
+            <div class="page__sidebar_item">
+                <a href="#" class="page__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="page__sidebar_item is-priority">
+                <div class="sidebar-menu">
+                    <a href="#" title="" class="sidebar-menu__item is-active"> 
+                        <span class="sidebar-menu__item_icon"><i class="fas fa-cart-arrow-down"></i></span>My products
+                        <a href="#" title="" class="sidebar-menu__item-inner">Connected</a>
+                        <a href="#" title="" class="sidebar-menu__item-inner">Non connected</a>
+                    </a>
+                    <a href="#" title="" class="sidebar-menu__item">
+                        <span class="sidebar-menu__item_icon"><i class="fas fa-dolly"></i></span>Orders
+                    </a>
+                    <a href="#" title="" class="sidebar-menu__item">
+                        <span class="sidebar-menu__item_icon"><i class="fas fa-bell"></i></span>Alerts
+                    </a>
+                    <a href="#" title="" class="sidebar-menu__item">
+                        <span class="sidebar-menu__item_icon"><i class="fas fa-coins"></i></span>Payments
+                    </a>
+                    <a href="#" title="" class="sidebar-menu__item">
+                        <span class="sidebar-menu__item_icon"><i class="fas fa-cog"></i></span>Settings
+                    </a>
+                </div>
+            </div>
+            <div class="page__sidebar_item">
+                <div class="login">
+                    <div class="login__item">
+                        <div class="login__avatar"><i class="fas fa-user"></i></div>
+                    </div>
+                    <div class="login__item">
+                        <div class="login__name">Profile</div>
+                        <div class="login__action">
+                            <span class="login__action_icon"><i class="fas fa-sign-in-alt"></i></span>
+                            <a href="#" title="" class="login__action_text">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="page__body page__details">
+            <div class="modal size-m">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Choose Shipping Method</h3>
+                        <span class="modal__close"><i class="fas fa-times-circle"></i></span>
+                    </div>
+                    <div class="modal__body">
+                        <div class="modal__filter">
+                            <div class="modal__filter_label">Ship my order(s) to:</div>
+                            <div class="modal__filter_value">
+                                <div class="select">
+                                    <div class="select__label">
+                                        <span class="select__label_text"><img src="../../img/icon-flag.png" alt="">USA</span>
+                                        <span class="select__label_arrow"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hide-mobile">
+                            <table class="modal__table" cellspacing="0" collspadding="0">
+                                <tr class="modal__table_row">
+                                    <th class="modal__table_title">Shipping Company</th>
+                                    <th class="modal__table_title">Estimated Delivery Time</th>
+                                    <th class="modal__table_title">Shipping Cost</th>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="radio is-active">
+                                            <input type="radio">
+                                            ePacket
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item">12-20 days</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="radio">
+                                            <input type="radio">
+                                            AliExpress<br>Standard Shipping
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item">12-20 days</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="radio">
+                                            <input type="radio">
+                                            <img src="../../img/logo-ems.png" alt="ems">
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item">12-20 days</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="hide-desktop">
+                            <ul class="modal__list">
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Company</div>
+                                    <div class="modal__list_value">
+                                        <div class="radio is-active">
+                                            <input type="radio">
+                                            ePacket
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Estimated Delivery Time</div>
+                                    <div class="modal__list_value">12-20 days</div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Cost</div>
+                                    <div class="modal__list_value has-color">US $0.81</div>
+                                </li>
+                            </ul>
+                            <ul class="modal__list">
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Company</div>
+                                    <div class="modal__list_value">
+                                        <div class="radio">
+                                            <input type="radio">
+                                            AliExpress Standard Shipping
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Estimated Delivery Time</div>
+                                    <div class="modal__list_value">12-20 days</div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Cost</div>
+                                    <div class="modal__list_value has-color">US $0.81</div>
+                                </li>
+                            </ul>
+                            <ul class="modal__list">
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Company</div>
+                                    <div class="modal__list_value">
+                                        <div class="radio">
+                                            <input type="radio">
+                                            <img src="../../img/logo-ems.png" alt="ems">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Estimated Delivery Time</div>
+                                    <div class="modal__list_value">12-20 days</div>
+                                </li>
+                                <li class="modal__list_item">
+                                    <div class="modal__list_label">Shipping Cost</div>
+                                    <div class="modal__list_value has-color">US $0.81</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <span class="btn btn-fill">Save</span>
+                    </div>
+                </div>
+            <div class="modal size-m">
+                    <div class="modal__header">
+                        <h3 class="modal__title">All variants</h3>
+                        <span class="modal__close"><i class="fas fa-times-circle"></i></span>
+                    </div>
+                    <div class="modal__body">
+                        <div class="modal__filter">
+                            <div class="modal__filter_label">Select:</div>
+                            <div class="modal__filter_value">
+                                <ul class="modal__filter-list">
+                                    <li class="modal__filter-list_item is-active">BLACK</li>
+                                    <li class="modal__filter-list_item">GOLD</li>
+                                    <li class="modal__filter-list_item">GRAY</li>
+                                    <li class="modal__filter-list_item">red</li>
+                                    <li class="modal__filter-list_item">jungle-green</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hide-mobile">
+                            <table class="modal__table" cellspacing="0" collspadding="0">
+                                <tr class="modal__table_row">
+                                    <th class="modal__table_title">
+                                        <div class="checkbox no-label">
+                                            <input type="checkbox">erter
+                                        </div>
+                                    </th>
+                                    <th class="modal__table_title">Option 1</th>
+                                    <th class="modal__table_title">Option 2</th>
+                                    <th class="modal__table_title">Price</th>
+                                    <th class="modal__table_title">SKU</th>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="checkbox is-active no-label">
+                                            <input type="checkbox">erter
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item"><img src="../../img/catalog-00001.jpg" alt=""></td>
+                                    <td class="modal__table_item">Small</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                    <td class="modal__table_item">SA989866355</td>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="checkbox no-label">
+                                            <input type="checkbox">erter
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item"><img src="../../img/catalog-00001.jpg" alt=""></td>
+                                    <td class="modal__table_item">Big</td>
+                                    <td class="modal__table_item has-color">US $4.81</td>
+                                    <td class="modal__table_item">SA989866353</td>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="checkbox no-label">
+                                            <input type="checkbox">erter
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item"><img src="../../img/catalog-00001.jpg" alt=""></td>
+                                    <td class="modal__table_item">Small</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                    <td class="modal__table_item">SA989866351</td>
+                                </tr>
+                                <tr class="modal__table_row">
+                                    <td class="modal__table_item">
+                                        <div class="checkbox no-label">
+                                            <input type="checkbox">erter
+                                        </div>
+                                    </td>
+                                    <td class="modal__table_item"><img src="../../img/catalog-00001.jpg" alt=""></td>
+                                    <td class="modal__table_item">Big</td>
+                                    <td class="modal__table_item has-color">US $0.81</td>
+                                    <td class="modal__table_item">SA989866355</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="hide-desktop">
+                            <div class="modal__list modal__list-column">
+                                <div class="modal__list-column_coll">
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Option 1</div>
+                                        <div class="modal__list_value">12-20 days</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Option 2</div>
+                                        <div class="modal__list_value">12-20 days</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Price</div>
+                                        <div class="modal__list_value has-color">US $0.81</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">SKU</div>
+                                        <div class="modal__list_value">SA989866355</div>
+                                    </div>
+                                </div>
+                                <div class="modal__list-column_coll">
+                                    <div class="checkbox is-active no-label">
+                                        <input type="checkbox">Label
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__list modal__list-column">
+                                <div class="modal__list-column_coll">
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Option 1</div>
+                                        <div class="modal__list_value">12-20 days</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Option 2</div>
+                                        <div class="modal__list_value">12-20 days</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">Price</div>
+                                        <div class="modal__list_value has-color">US $0.81</div>
+                                    </div>
+                                    <div class="modal__list_item">
+                                        <div class="modal__list_label">SKU</div>
+                                        <div class="modal__list_value">SA989866355</div>
+                                    </div>
+                                </div>
+                                <div class="modal__list-column_coll">
+                                    <div class="checkbox no-label">
+                                        <input type="checkbox">Label
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <span class="btn btn-fill"><i class="fas fa-plus-square"></i>Add to import list</span>
+                    </div>
+                </div>
+            <div class="catalogue">
+                <h3 class="catalogue__title">Bestsellers</h3>
+                <ul class="catalogue__list">
+                    <li class="catalogue__item">
+                        <span class="catalogue__item_img"><img src="../../img/catalog-tmb-00002.png" alt=""></span>
+                        <span class="catalogue__item_title">Asus ZenFone Go ZB452KG (black and white)</span>
+                        <div class="catalogue__item_info">
+                            <span class="catalogue__item_cost">$ 384.4</span>
+                            <span class="catalogue__item_shiping">+$1.9 ePacket</span>
+                        </div>
+                        <div class="catalogue__item_feedback">
+                            <div class="catalogue__item_feedback_row">
+                                <div class="catalogue__item_raiting">
+                                    <span class="catalogue__item_raiting-item"><i class="fas fa-star"></i></span>
+                                    <span class="catalogue__item_raiting-item"><i class="fas fa-star"></i></span>
+                                    <span class="catalogue__item_raiting-item"><i class="fas fa-star"></i></span>
+                                    <span class="catalogue__item_raiting-item"><i class="fas fa-star"></i></span>
+                                    <span class="catalogue__item_raiting-item"><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="catalogue__item_reviews"><i class="far fa-comment-alt"></i> Reviews: 12</div>
+                            </div>
+                            <div class="catalogue__item_feedback_row">
+                                <div class="catalogue__item_reviews"><i class="fas fa-shopping-basket"></i> Order: 715</div>
+                                <div class="catalogue__item_reviews"><i class="fas fa-chart-line"></i> Trending: 23,45</div>
+                            </div>
+                        </div>
+                        <span class="catalogue__item_btn">
+                            <span class="btn btn-fill"><i class="fas fa-plus-square"></i>Add to import list</span>
+                            <span class="info"><i class="fas fa-info-circle"></i></span>
+                        </span>
+                        <span class="catalogue__item_btn">
+                            <span class="btn">Buy sample</span>
+                            <span class="info">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="tooltip l-c">Service is free, no any monthly, annual or else fees required</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="catalogue__item">
+                        <span class="catalogue__item_img"><img src="../../img/catalog-tmb-00003.png" alt=""></span>
+                        <span class="catalogue__item_title">Asus ZenFone Go ZB452KG (black and white)</span>
+                        <div class="catalogue__item_info">
+                            <span class="catalogue__item_cost">$ 384.4</span>
+                            <span class="catalogue__item_shiping">+$1.9 ePacket</span>
+                        </div>
+                        <span class="catalogue__item_btn">
+                            <span class="btn btn-wide">Add to import list</span>
+                        </span>
+                    </li>
+                    <li class="catalogue__item">
+                        <span class="catalogue__item_img"><img src="../../img/catalog-tmb-00004.png" alt=""></span>
+                        <span class="catalogue__item_title">Asus ZenFone Go ZB452KG (black and white)</span>
+                        <div class="catalogue__item_info">
+                            <span class="catalogue__item_cost">$ 384.4</span>
+                            <span class="catalogue__item_shiping">+$1.9 ePacket</span>
+                        </div>
+                        <span class="catalogue__item_btn">
+                            <span class="btn btn-wide">Add to import list</span>
+                        </span>
+                    </li>
+                    <li class="catalogue__item">
+                        <span class="catalogue__item_img"><img src="../../img/catalog-tmb-00005.png" alt=""></span>
+                        <span class="catalogue__item_title">Asus ZenFone Go ZB452KG (black and white)</span>
+                        <div class="catalogue__item_info">
+                            <span class="catalogue__item_cost">$ 384.4</span>
+                            <span class="catalogue__item_shiping">+$1.9 ePacket</span>
+                        </div>
+                        <span class="catalogue__item_btn">
+                            <span class="btn btn-wide">Add to import list</span>
+                        </span>
+                    </li>
+                </ul>
+                <a href="#" class="catalogue__more">See more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
